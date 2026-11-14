@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue - Maison Bloom</title>
+  <meta name="description" content="Catalogue Maison Bloom - Bouquets, coffrets et paniers cadeaux. Création de bouquets, coffrets sur mesure et cadeaux personnalisés en Île-de-France et livraison dans toute la France.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Maison Bloom">
+  <meta property="og:title" content="Catalogue - Maison Bloom">
+  <meta property="og:description" content="Bouquets, coffrets et paniers cadeaux faits main, entièrement personnalisables.">
+  <meta name="twitter:card" content="summary">
+  <!-- À ACTIVER dès que le nom de domaine est connu (URL absolues obligatoires) :
+  <link rel="canonical" href="https://www.DOMAINE.fr/catalogue">
+  <meta property="og:url" content="https://www.DOMAINE.fr/catalogue">
+  <meta property="og:image" content="https://www.DOMAINE.fr/images/partage.jpg">  (image 1200×630)
+  -->
+  <meta name="theme-color" content="#F5E9E8">
+  <link rel="icon" type="image/png" href="images/logo-rond.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body class="page-catalogue">
+
+  <!-- Icônes SVG (réutilisées dans la page) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-basket" viewBox="0 0 24 24"><path d="M3 10h18l-1.6 9.2a2 2 0 0 1-2 1.8H6.6a2 2 0 0 1-2-1.8L3 10Z"/><path d="m8 10 3-6M16 10l-3-6M9 14v3M12 14v3M15 14v3"/></symbol>
+    <symbol id="i-flower" viewBox="0 0 24 24"><circle cx="12" cy="9" r="2.2"/><path d="M12 6.8c0-2.4 1.2-3.8 2.6-3.8S17 4.6 16 6.4c-.6 1.1-2 1.8-3.4 2M9.8 8.6C7.6 7.8 6.2 8.4 5.8 9.8s.8 2.7 2.8 2.6c1.2 0 2.4-.8 3-1.8M14.2 9.2c2.2-.6 3.6.2 3.9 1.6s-1 2.6-2.9 2.3c-1.2-.2-2.3-1-2.8-2M12 11.2V21M12 17c-2.5 0-4-1.3-4.5-3 2.4-.2 4 .9 4.5 3ZM12 18.5c2.4 0 3.8-1.2 4.3-2.9-2.3-.2-3.8.8-4.3 2.9Z"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3.5" y="8" width="17" height="4" rx="1"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7M12 8v13M12 8S10.8 3.5 8.3 3.5a2.2 2.2 0 0 0 0 4.5H12ZM12 8s1.2-4.5 3.7-4.5a2.2 2.2 0 0 1 0 4.5H12Z"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M10 3.5 11.6 8a3 3 0 0 0 1.9 1.9L18 11.5 13.5 13a3 3 0 0 0-1.9 1.9L10 19.5 8.4 15A3 3 0 0 0 6.5 13L2 11.5 6.5 10A3 3 0 0 0 8.4 8L10 3.5ZM18.5 2.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8L16 5l1.8-.7.7-1.8ZM18.5 16l.6 1.4 1.4.6-1.4.6-.6 1.4-.6-1.4-1.4-.6 1.4-.6.6-1.4Z"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.4-7.5-10A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.9c0 5.6-7.5 10-7.5 10Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 6.5h11v10h-11zM13.5 10h4l3 3.2v3.3h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 3.5v11.2a3.8 3.8 0 1 1-3.8-3.8M14 3.5c.4 2.6 2.3 4.4 5 4.6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.4-4.4M11 8v6M8 11h6"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html#top" class="logo" aria-label="Maison Bloom - accueil">
+        <img src="images/logo-long.png" alt="Maison Bloom" width="855" height="381">
+      </a>
+
+      <nav class="nav" id="nav-menu" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html#about">À propos</a></li>
+          <li><a href="index.html#services">Prestations</a></li>
+          <li><a href="index.html#portfolio">Créations</a></li>
+          <li><a href="catalogue.html" class="active" aria-current="page">Catalogue</a></li>
+          <li><a href="index.html#process">Commander</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <a href="index.html#contact" class="btn btn-primary nav-cta">Demander un devis</a>
+      </nav>
+
+      <a href="index.html#contact" class="btn btn-primary btn-header">Demander un devis</a>
+
+      <button class="menu-btn" id="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ EN-TÊTE CATALOGUE ============ -->
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <nav class="crumbs" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span>/</span><span>Catalogue</span></nav>
+        <h1>Le catalogue</h1>
+        <p class="lead">Toutes les créations Maison Bloom sont réalisées à la main et entièrement personnalisables. Choisissez un modèle, puis nous l'adaptons ensemble à vos envies.</p>
+        <div class="cat-filter" role="group" aria-label="Filtrer le catalogue">
+          <button class="active" data-filter="all" aria-pressed="true">Tout voir <span class="count"></span></button>
+          <button data-filter="bouquet" aria-pressed="false">Bouquets <span class="count"></span></button>
+          <button data-filter="coffret" aria-pressed="false">Coffrets &amp; paniers <span class="count"></span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LISTE (générée depuis catalogue.js) ============ -->
+    <div class="container" id="catalogue-root"></div>
+
+    <!-- ============ SUR MESURE ============ -->
+    <section class="cat-cta">
+      <div class="container cat-cta-inner" data-reveal>
+        <img src="images/logo-rond-blanc.png" alt="" width="437" height="444" loading="lazy">
+        <div>
+          <h2>Une création sur mesure ?</h2>
+          <p>Nous discutons de vos besoins pour créer une proposition personnalisée.</p>
+        </div>
+        <a href="index.html#contact" class="btn btn-light">Décrire mon idée</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="images/logo-long-blanc.png" alt="Maison Bloom" class="footer-logo" width="855" height="381" loading="lazy">
+      <nav aria-label="Navigation pied de page">
+        <a href="index.html#about">À propos</a>
+        <a href="index.html#services">Prestations</a>
+        <a href="index.html#portfolio">Créations</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="index.html#process">Commander</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/maison.bloom.fr/" target="_blank" rel="noopener" aria-label="Instagram Maison Bloom"><svg class="ic"><use href="#i-instagram"/></svg></a>
+        <a href="https://www.tiktok.com/@maisonbloomfrance" target="_blank" rel="noopener" aria-label="TikTok Maison Bloom"><svg class="ic"><use href="#i-tiktok"/></svg></a>
+      </div>
+      <nav class="footer-legal" aria-label="Informations légales">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgv.html">Conditions générales de vente</a>
+        <a href="confidentialite.html">Confidentialité</a>
+      </nav>
+      <p class="footer-copy"><span id="footer-year">© Maison Bloom - Tous droits réservés.</span></p>
+    </div>
+  </footer>
+
+  <!-- Fiche détaillée -->
+  <div class="cat-modal" id="cat-modal" role="dialog" aria-modal="true" aria-labelledby="cm-title" hidden>
+    <div class="cm-box">
+      <button class="cm-close" aria-label="Fermer"><svg class="ic"><use href="#i-close"/></svg></button>
+      <div class="cm-gallery">
+        <div class="cm-main"></div>
+        <div class="cm-thumbs"></div>
+      </div>
+      <div class="cm-info">
+        <div class="cm-tags"><span class="p-cat cm-cat"></span><span class="cm-ref"></span></div>
+        <h2 class="cm-title" id="cm-title"></h2>
+        <p class="cm-desc"></p>
+        <ul class="cm-details"></ul>
+        <p class="cm-price"></p>
+        <a href="index.html#contact" class="btn btn-primary btn-block cm-order" data-order="">Commander cette création</a>
+        <p class="cm-note">Chaque création est personnalisable : couleurs, fleurs et cadeaux selon vos envies.</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="top-button" id="top-button" aria-label="Retour en haut de page"><svg class="ic"><use href="#i-up"/></svg></button>
+
+  <script src="catalogue.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
